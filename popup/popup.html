@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="qf-glossary">
+    <div class="qf-glossary-header">
+      <img src="../quotefii-logo.webp" alt="QuoteFii" class="qf-glossary-logo">
+      <span class="qf-glossary-title">Insurance Jargon Decoder</span>
+    </div>
+
+    <div class="qf-glossary-toggle">
+      <label class="qf-toggle-label">
+        <span>Auto-highlight on insurance sites</span>
+        <input type="checkbox" id="qf-toggle" checked>
+        <span class="qf-toggle-slider"></span>
+      </label>
+    </div>
+
+    <div class="qf-glossary-search">
+      <input type="text" id="qf-search" placeholder="Search terms..." autocomplete="off">
+    </div>
+
+    <div class="qf-glossary-list" id="qf-list"></div>
+
+    <div class="qf-glossary-footer">
+      <a href="https://blog.quotefii.com?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder" target="_blank" rel="noopener">
+        Powered by QuoteFii
+      </a>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

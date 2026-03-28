@@ -1,0 +1,196 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 360px;
+  max-height: 500px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 13px;
+  color: #1e293b;
+  overflow: hidden;
+}
+
+.qf-glossary {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+}
+
+.qf-glossary-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.qf-glossary-logo {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+}
+
+.qf-glossary-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #1B3A6D;
+}
+
+/* ── Toggle ── */
+.qf-glossary-toggle {
+  padding: 10px 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.qf-toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 12.5px;
+  color: #64748b;
+}
+
+.qf-toggle-label input {
+  display: none;
+}
+
+.qf-toggle-slider {
+  width: 36px;
+  height: 20px;
+  background: #cbd5e1;
+  border-radius: 10px;
+  position: relative;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.qf-toggle-slider::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.qf-toggle-label input:checked + .qf-toggle-slider {
+  background: #1B3A6D;
+}
+
+.qf-toggle-label input:checked + .qf-toggle-slider::after {
+  transform: translateX(16px);
+}
+
+/* ── Search ── */
+.qf-glossary-search {
+  padding: 10px 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.qf-glossary-search input {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.qf-glossary-search input:focus {
+  border-color: #2d5a9e;
+}
+
+/* ── List ── */
+.qf-glossary-list {
+  overflow-y: auto;
+  flex: 1;
+  max-height: 340px;
+}
+
+.qf-term-item {
+  border-bottom: 1px solid #f1f5f9;
+  cursor: pointer;
+}
+
+.qf-term-name {
+  padding: 10px 14px;
+  font-weight: 600;
+  font-size: 13px;
+  color: #1B3A6D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qf-term-name:hover {
+  background: #f8fafc;
+}
+
+.qf-term-arrow {
+  font-size: 10px;
+  color: #94a3b8;
+  transition: transform 0.15s;
+}
+
+.qf-term-item.open .qf-term-arrow {
+  transform: rotate(90deg);
+}
+
+.qf-term-body {
+  display: none;
+  padding: 0 14px 10px;
+}
+
+.qf-term-item.open .qf-term-body {
+  display: block;
+}
+
+.qf-term-def {
+  font-size: 12.5px;
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.qf-term-link a {
+  font-size: 12px;
+  color: #2d5a9e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.qf-term-link a:hover {
+  text-decoration: underline;
+}
+
+.qf-no-results {
+  padding: 20px 14px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* ── Footer ── */
+.qf-glossary-footer {
+  padding: 10px 14px;
+  border-top: 1px solid #e2e8f0;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.qf-glossary-footer a {
+  color: #64748b;
+  text-decoration: none;
+  font-size: 11.5px;
+  font-weight: 500;
+}
+
+.qf-glossary-footer a:hover {
+  color: #1B3A6D;
+}
