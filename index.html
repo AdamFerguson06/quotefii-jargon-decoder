@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insurance Jargon Decoder | QuoteFii Chrome Extension</title>
+  <meta name="description" content="Free Chrome extension that explains auto insurance terms in plain English. Highlights jargon on insurance sites and lets you right-click to look up any term.">
+  <link rel="canonical" href="https://adamferguson06.github.io/quotefii-jargon-decoder/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Insurance Jargon Decoder | QuoteFii Chrome Extension">
+  <meta property="og:description" content="Free Chrome extension that explains auto insurance terms in plain English. Auto-highlights terms on insurance sites.">
+  <meta property="og:url" content="https://adamferguson06.github.io/quotefii-jargon-decoder/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1B3A6D;
+      --primary-light: #2d5a9e;
+      --primary-dark: #132a4f;
+      --accent: #3b82f6;
+      --accent-light: #dbeafe;
+      --text: #1e293b;
+      --text-secondary: #64748b;
+      --bg: #ffffff;
+      --bg-subtle: #f8fafc;
+      --border: #e2e8f0;
+      --success: #16a34a;
+      --success-bg: #dcfce7;
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+      --radius: 12px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--text); line-height: 1.7; background: var(--bg); -webkit-font-smoothing: antialiased; }
+    .topbar { background: var(--primary-dark); padding: 0.625rem 2rem; display: flex; align-items: center; justify-content: space-between; }
+    .topbar-brand { display: flex; align-items: center; gap: 0.5rem; color: #fff; text-decoration: none; font-weight: 600; font-size: 0.875rem; }
+    .topbar-links { display: flex; gap: 1.25rem; }
+    .topbar-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.8125rem; font-weight: 500; transition: color 0.15s; }
+    .topbar-links a:hover { color: #fff; }
+    .hero { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: #fff; padding: 3.5rem 2rem 3rem; text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.06) 0%, transparent 50%); }
+    .hero-content { position: relative; max-width: 640px; margin: 0 auto; }
+    .hero-badge { display: inline-flex; align-items: center; gap: 0.375rem; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.15); padding: 0.375rem 0.875rem; border-radius: 100px; font-size: 0.8125rem; font-weight: 500; margin-bottom: 1.25rem; color: rgba(255,255,255,0.9); }
+    .hero h1 { font-size: 2.25rem; font-weight: 700; line-height: 1.15; margin-bottom: 0.75rem; letter-spacing: -0.025em; }
+    .hero p { font-size: 1.0625rem; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto; }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 2rem; }
+    .section { padding: 2.5rem 0; }
+    .section + .section { border-top: 1px solid #f1f5f9; }
+    .section-title { font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.75rem; letter-spacing: -0.025em; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-top: 1.5rem; }
+    .feature { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; transition: box-shadow 0.2s, transform 0.2s; }
+    .feature:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+    .feature-icon { width: 40px; height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; background: var(--accent-light); color: var(--primary); margin-bottom: 0.75rem; }
+    .feature h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.375rem; }
+    .feature p { font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; }
+    .status-badge { display: inline-flex; align-items: center; gap: 0.375rem; font-size: 0.75rem; font-weight: 600; padding: 0.25rem 0.75rem; border-radius: 100px; background: var(--success-bg); color: var(--success); margin-bottom: 1rem; }
+    .status-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--success); }
+    .cta-section { background: linear-gradient(135deg, var(--bg-subtle) 0%, var(--accent-light) 100%); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; text-align: center; margin: 1.5rem 0 0; }
+    .cta-title { font-size: 1.25rem; font-weight: 700; color: var(--primary); margin-bottom: 0.375rem; }
+    .cta-desc { color: var(--text-secondary); font-size: 0.9375rem; margin-bottom: 1.25rem; }
+    .cta-button { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--primary); color: #fff; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.9375rem; transition: background 0.15s, transform 0.15s; }
+    .cta-button:hover { background: var(--primary-light); transform: translateY(-1px); }
+    .cta-links { margin-top: 0.75rem; font-size: 0.8125rem; color: var(--text-secondary); }
+    .cta-links a { color: var(--primary-light); text-decoration: none; font-weight: 500; }
+    .cta-links a:hover { text-decoration: underline; }
+    .terms-preview { background: var(--bg-subtle); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-top: 1.25rem; }
+    .terms-preview h3 { font-size: 0.875rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.75rem; }
+    .term-tags { display: flex; flex-wrap: wrap; gap: 0.375rem; }
+    .term-tag { font-size: 0.8125rem; font-weight: 500; background: #fff; border: 1px solid var(--border); color: var(--text); padding: 0.25rem 0.625rem; border-radius: 6px; }
+    footer { background: var(--primary-dark); color: rgba(255,255,255,0.6); padding: 2rem; text-align: center; font-size: 0.8125rem; margin-top: 2.5rem; }
+    footer a { color: rgba(255,255,255,0.8); text-decoration: none; font-weight: 500; }
+    footer a:hover { color: #fff; }
+    .footer-links { display: flex; justify-content: center; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+    .footer-sep { width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,0.3); }
+    a { color: var(--primary-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    @media (max-width: 768px) {
+      .topbar { padding: 0.5rem 1rem; } .topbar-links { gap: 0.75rem; }
+      .hero { padding: 2.5rem 1.5rem 2rem; } .hero h1 { font-size: 1.75rem; }
+      .container { padding: 0 1.25rem; } .section { padding: 2rem 0; }
+      .features { grid-template-columns: 1fr; }
+      .footer-links { flex-direction: column; gap: 0.5rem; } .footer-sep { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="https://blog.quotefii.com?utm_source=github&utm_medium=pages&utm_content=jargon-decoder" class="topbar-brand">
+    <img src="quotefii-logo.webp" alt="QuoteFii" width="22" height="22" style="border-radius: 4px;">
+    QuoteFii
+  </a>
+  <div class="topbar-links">
+    <a href="https://blog.quotefii.com/guides?utm_source=github&utm_medium=pages&utm_content=jargon-decoder">Guides</a>
+    <a href="https://blog.quotefii.com/data?utm_source=github&utm_medium=pages&utm_content=jargon-decoder">Data</a>
+    <a href="https://github.com/AdamFerguson06/quotefii-jargon-decoder">GitHub</a>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      Chrome Extension
+    </div>
+    <h1>Insurance Jargon Decoder</h1>
+    <p>Plain-English definitions for auto insurance terms. Highlights jargon on insurance sites and lets you right-click to look up any term.</p>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <span class="status-badge"><span class="status-dot"></span> In Development</span>
+    <h2 class="section-title">How It Works</h2>
+    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+      Shopping for auto insurance and confused by the terminology? This free extension decodes insurance jargon right on the page, so you can make informed decisions without opening a new tab.
+    </p>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Auto-highlight</h3>
+        <p>On insurance websites, recognized terms are automatically underlined. Hover or click to see the definition instantly.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </div>
+        <h3>Right-click anywhere</h3>
+        <p>Select any insurance term on any website, right-click, and choose "Define Insurance Term" for an instant explanation.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        </div>
+        <h3>Full glossary</h3>
+        <p>Click the toolbar icon to browse and search all 50+ terms. A quick reference you can access anytime.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Terms Included</h2>
+    <p style="color: var(--text-secondary); margin-bottom: 0.75rem;">
+      Covers the most common auto insurance terms, from basic coverage types to policy details. Each definition is written in plain English with real examples.
+    </p>
+    <div class="terms-preview">
+      <h3>Sample Terms</h3>
+      <div class="term-tags">
+        <span class="term-tag">Deductible</span>
+        <span class="term-tag">Liability</span>
+        <span class="term-tag">Comprehensive</span>
+        <span class="term-tag">Collision</span>
+        <span class="term-tag">BI/PD</span>
+        <span class="term-tag">UM/UIM</span>
+        <span class="term-tag">Premium</span>
+        <span class="term-tag">Full Coverage</span>
+        <span class="term-tag">SR-22</span>
+        <span class="term-tag">PIP</span>
+        <span class="term-tag">MedPay</span>
+        <span class="term-tag">GAP Insurance</span>
+        <span class="term-tag">Tort</span>
+        <span class="term-tag">Subrogation</span>
+        <span class="term-tag">Endorsement</span>
+        <span class="term-tag">Declarations Page</span>
+        <span class="term-tag">Binder</span>
+        <span class="term-tag">Exclusion</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="cta-section">
+      <p class="cta-title">Ready to Compare Rates?</p>
+      <p class="cta-desc">Now that you understand the terms, see how your rate stacks up.</p>
+      <a href="https://blog.quotefii.com/tools/overpaying-calculator?utm_source=github&utm_medium=pages&utm_content=jargon-decoder" class="cta-button">
+        Try the Free Calculator
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <p class="cta-links">
+        Or explore our <a href="https://blog.quotefii.com/guides?utm_source=github&utm_medium=pages&utm_content=jargon-decoder">insurance guides</a>
+        and <a href="https://blog.quotefii.com/data?utm_source=github&utm_medium=pages&utm_content=jargon-decoder">data tables</a>.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://blog.quotefii.com?utm_source=github&utm_medium=pages&utm_content=jargon-decoder">QuoteFii Blog</a>
+    <span class="footer-sep"></span>
+    <a href="https://quotefii.com?utm_source=github&utm_medium=pages&utm_content=jargon-decoder">Compare Quotes</a>
+    <span class="footer-sep"></span>
+    <a href="https://github.com/AdamFerguson06/quotefii-jargon-decoder">View on GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>
