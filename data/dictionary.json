@@ -1,1 +1,308 @@
-[]
+[
+  {
+    "term": "Liability Coverage",
+    "aliases": ["liability", "liability insurance"],
+    "definition": "Insurance that pays for injuries or damage you cause to other people or their property in an accident. Required in almost every state. It has two parts: bodily injury (BI) and property damage (PD).",
+    "learn_more_url": "https://blog.quotefii.com/blog/understanding-auto-insurance-coverage-types?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Bodily Injury",
+    "aliases": ["BI", "bodily injury liability", "BI coverage"],
+    "definition": "The part of liability coverage that pays for medical bills, lost wages, and pain and suffering of people you injure in an at-fault accident. Your state sets a minimum required amount, shown as per-person and per-accident limits.",
+    "learn_more_url": "https://blog.quotefii.com/blog/understanding-auto-insurance-coverage-types?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Property Damage",
+    "aliases": ["PD", "property damage liability", "PD coverage"],
+    "definition": "The part of liability coverage that pays for damage you cause to someone else's vehicle or property (fences, buildings, mailboxes) in an at-fault accident. Your state sets a minimum required amount.",
+    "learn_more_url": "https://blog.quotefii.com/blog/understanding-auto-insurance-coverage-types?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Collision Coverage",
+    "aliases": ["collision", "collision insurance"],
+    "definition": "Pays to repair or replace your own car after an accident with another vehicle or object (tree, guardrail, pole), regardless of who is at fault. You pay your deductible first, then insurance covers the rest up to your car's value.",
+    "learn_more_url": "https://blog.quotefii.com/blog/understanding-auto-insurance-coverage-types?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Comprehensive Coverage",
+    "aliases": ["comprehensive", "comp", "comprehensive insurance", "other than collision"],
+    "definition": "Pays to repair or replace your car for damage from events other than collisions: theft, vandalism, hail, flooding, fire, falling objects, or hitting an animal. You pay your deductible first.",
+    "learn_more_url": "https://blog.quotefii.com/blog/understanding-auto-insurance-coverage-types?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Uninsured Motorist",
+    "aliases": ["UM", "UM coverage", "uninsured motorist coverage"],
+    "definition": "Pays for your injuries and sometimes vehicle damage if you're hit by a driver who has no insurance. Required in many states. Protects you when the at-fault driver can't pay.",
+    "learn_more_url": "https://blog.quotefii.com/blog/understanding-auto-insurance-coverage-types?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Underinsured Motorist",
+    "aliases": ["UIM", "UIM coverage", "underinsured motorist coverage"],
+    "definition": "Pays the difference when the at-fault driver's insurance isn't enough to cover your injuries or damage. If your medical bills are $80,000 but the other driver only has $50,000 in coverage, UIM can cover the gap.",
+    "learn_more_url": "https://blog.quotefii.com/blog/understanding-auto-insurance-coverage-types?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Personal Injury Protection",
+    "aliases": ["PIP", "PIP coverage", "personal injury protection coverage"],
+    "definition": "Pays for your own medical bills, lost wages, and related expenses after an accident, regardless of who caused it. Required in no-fault states. Covers you and sometimes your passengers.",
+    "learn_more_url": "https://blog.quotefii.com/blog/understanding-auto-insurance-coverage-types?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Medical Payments Coverage",
+    "aliases": ["MedPay", "med pay", "medical payments"],
+    "definition": "Pays for medical expenses for you and your passengers after an accident, regardless of fault. Similar to PIP but typically covers only medical bills, not lost wages. Available in most states as an optional add-on.",
+    "learn_more_url": "https://blog.quotefii.com/blog/understanding-auto-insurance-coverage-types?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "GAP Insurance",
+    "aliases": ["GAP", "GAP coverage", "guaranteed asset protection"],
+    "definition": "Covers the difference between what your car is worth and what you still owe on your loan or lease if your car is totaled. Without it, you could owe thousands on a car you can no longer drive.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Full Coverage",
+    "aliases": ["full coverage insurance", "full coverage auto insurance"],
+    "definition": "Not an official insurance term, but commonly means liability plus collision plus comprehensive coverage. Lenders and lease companies typically require full coverage on financed vehicles.",
+    "learn_more_url": "https://blog.quotefii.com/blog/understanding-auto-insurance-coverage-types?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Minimum Coverage",
+    "aliases": ["state minimum", "minimum liability", "minimum coverage requirements"],
+    "definition": "The lowest amount of insurance your state legally requires you to carry. Usually expressed as three numbers like 25/50/25 (meaning $25,000 per person bodily injury, $50,000 per accident bodily injury, $25,000 property damage).",
+    "learn_more_url": "https://blog.quotefii.com/blog/average-car-insurance-cost-by-state?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Umbrella Policy",
+    "aliases": ["umbrella insurance", "umbrella coverage"],
+    "definition": "Extra liability coverage that kicks in when your regular auto or home insurance limits are exhausted. Typically sold in $1 million increments. Protects your assets if you're sued for a serious accident.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Rental Reimbursement",
+    "aliases": ["rental car coverage", "rental reimbursement coverage"],
+    "definition": "Pays for a rental car while your vehicle is being repaired after a covered claim. Typically has a daily limit ($30 to $50 per day) and a maximum number of days.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Roadside Assistance",
+    "aliases": ["towing coverage", "roadside assistance coverage"],
+    "definition": "An optional coverage that pays for towing, flat tire changes, jump starts, lockout service, and fuel delivery if your car breaks down. Usually costs a few dollars per month to add to your policy.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Premium",
+    "aliases": ["insurance premium", "monthly premium", "annual premium"],
+    "definition": "The amount you pay for your insurance policy, usually billed monthly, every six months, or annually. Your premium is based on factors like your age, driving record, location, vehicle, credit score, and coverage choices.",
+    "learn_more_url": "https://blog.quotefii.com/blog/car-insurance-costs-by-age-and-profile?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Deductible",
+    "aliases": ["deductibles"],
+    "definition": "The amount you pay out of pocket before your insurance coverage kicks in. With a $500 deductible, you pay the first $500 of a covered claim and your insurer pays the rest. Higher deductibles usually mean lower premiums.",
+    "learn_more_url": "https://blog.quotefii.com/blog/understanding-auto-insurance-coverage-types?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Policy",
+    "aliases": ["insurance policy", "auto policy", "auto insurance policy"],
+    "definition": "The contract between you and your insurance company. It spells out what's covered, what's excluded, your coverage limits, your deductibles, and how much you pay. Policies typically last six months or one year.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Declarations Page",
+    "aliases": ["dec page", "declarations", "declaration page"],
+    "definition": "The summary page of your insurance policy that lists your name, vehicle, coverage types, limits, deductibles, premium, and policy dates. It's the quickest way to see what you're covered for and what you're paying.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Endorsement",
+    "aliases": ["endorsements", "policy endorsement"],
+    "definition": "A change or addition to your existing insurance policy. Endorsements can add, remove, or modify coverage, such as adding rideshare coverage or increasing your liability limits. Also sometimes called a rider.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Rider",
+    "aliases": ["riders", "insurance rider"],
+    "definition": "Another name for an endorsement. A modification to your standard policy that adds or changes coverage. Common riders include rental car coverage, custom equipment coverage, and gap insurance.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Exclusion",
+    "aliases": ["exclusions", "policy exclusion"],
+    "definition": "Something your insurance policy specifically will not cover. Common exclusions include intentional damage, racing, using your personal car for commercial delivery, and wear and tear. Always read your policy's exclusions section.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Binder",
+    "aliases": ["insurance binder", "binder of insurance"],
+    "definition": "A temporary proof of insurance that provides coverage while your full policy is being processed. Binders are typically valid for 30 to 90 days. You might get one when you buy a new car and need immediate proof of coverage.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Coverage Limit",
+    "aliases": ["coverage limits", "policy limits"],
+    "definition": "The maximum amount your insurance company will pay for a covered claim. A $100,000 bodily injury limit means the insurer pays up to $100,000 per person for injuries. Anything above that is your responsibility.",
+    "learn_more_url": "https://blog.quotefii.com/blog/understanding-auto-insurance-coverage-types?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Split Limits",
+    "aliases": ["split limit"],
+    "definition": "A way of expressing liability coverage as three separate numbers, like 100/300/100. The first is per-person bodily injury, the second is per-accident bodily injury, the third is property damage. Most states use split limits for minimum requirements.",
+    "learn_more_url": "https://blog.quotefii.com/blog/understanding-auto-insurance-coverage-types?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Combined Single Limit",
+    "aliases": ["CSL", "combined single limit coverage"],
+    "definition": "A single dollar amount that covers all bodily injury and property damage claims from one accident, instead of splitting limits between categories. A $300,000 CSL can be applied however needed across all claims from one accident.",
+    "learn_more_url": "https://blog.quotefii.com/blog/understanding-auto-insurance-coverage-types?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Named Insured",
+    "aliases": ["policyholder", "named insured driver"],
+    "definition": "The person or people specifically listed on the insurance policy as the primary insured. The named insured has the most rights under the policy, including the ability to make changes, add drivers, or cancel coverage.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Claim",
+    "aliases": ["insurance claim", "file a claim", "claims"],
+    "definition": "A formal request to your insurance company to pay for a covered loss or damage. When you're in an accident or your car is damaged, you file a claim and an adjuster reviews it to determine how much the insurer will pay.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Adjuster",
+    "aliases": ["claims adjuster", "insurance adjuster"],
+    "definition": "The person from the insurance company who investigates your claim, assesses the damage, and determines how much the insurer will pay. They may inspect your vehicle, review police reports, and interview witnesses.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Subrogation",
+    "aliases": ["subrogation claim", "subrogation rights"],
+    "definition": "The process where your insurance company recovers money from the at-fault driver's insurer after paying your claim. Your insurer pays your repairs first, then pursues the other driver's insurer to get reimbursed.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Total Loss",
+    "aliases": ["totaled", "totalled", "total loss vehicle"],
+    "definition": "When your car's repair costs exceed its market value (or a threshold set by your state, usually 70% to 100% of value). The insurer declares it a total loss, pays you the car's actual cash value minus your deductible, and takes the vehicle.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Diminished Value",
+    "aliases": ["diminished value claim"],
+    "definition": "The loss in your car's resale value after it has been in an accident and repaired. Even with perfect repairs, a car with an accident history is worth less. Some states allow you to file a diminished value claim against the at-fault driver's insurer.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Comparative Negligence",
+    "aliases": ["comparative fault", "shared fault"],
+    "definition": "A legal rule used in many states where fault for an accident is shared between drivers. Your compensation is reduced by your percentage of fault. If you're 20% at fault, you receive 80% of your damages.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "No-Fault Insurance",
+    "aliases": ["no-fault", "no fault", "no-fault state"],
+    "definition": "A system used in some states where each driver's own insurance pays for their injuries regardless of who caused the accident. No-fault states require PIP coverage. You can only sue the other driver in cases of serious injury.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Tort",
+    "aliases": ["tort state", "tort system"],
+    "definition": "The legal system used in most states where the at-fault driver is responsible for paying the other driver's damages. In tort states (also called at-fault states), you can sue the driver who caused the accident for your injuries and losses.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "SR-22",
+    "aliases": ["SR22", "SR 22", "SR-22 filing", "SR-22 certificate"],
+    "definition": "A certificate your insurance company files with the state proving you carry the required minimum coverage. Usually required after serious violations like DUI, driving without insurance, or multiple at-fault accidents. It's not a type of insurance, it's proof of insurance.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "FR-44",
+    "aliases": ["FR44", "FR 44", "FR-44 filing"],
+    "definition": "Similar to an SR-22 but requires higher liability limits. Only used in Florida and Virginia, typically after a DUI conviction. FR-44 requires coverage limits significantly above the state minimum.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Proof of Insurance",
+    "aliases": ["insurance card", "proof of coverage", "insurance verification"],
+    "definition": "Documentation that shows you have active auto insurance. Required in every state. Can be a physical card, digital card on your phone, or your declarations page. You need it at traffic stops, accidents, and vehicle registration.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Insurance Score",
+    "aliases": ["credit-based insurance score"],
+    "definition": "A number calculated from your credit history that insurers use to predict how likely you are to file a claim. It's different from your regular credit score but uses similar data. A higher insurance score typically means lower premiums. Banned in a few states.",
+    "learn_more_url": "https://blog.quotefii.com/blog/car-insurance-costs-by-age-and-profile?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "NAIC",
+    "aliases": ["National Association of Insurance Commissioners"],
+    "definition": "The National Association of Insurance Commissioners, a regulatory organization of insurance commissioners from all 50 states, DC, and U.S. territories. The NAIC publishes the most authoritative data on auto insurance premiums and market trends.",
+    "learn_more_url": "https://blog.quotefii.com/data?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Rate Filing",
+    "aliases": ["rate filings", "insurance rate filing"],
+    "definition": "The formal process where insurance companies submit their proposed rates to the state Department of Insurance for review. Depending on the state, rates may need prior approval before they can be charged, or companies may file and use them immediately.",
+    "learn_more_url": "https://blog.quotefii.com/data?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Multi-Policy Discount",
+    "aliases": ["bundling discount", "bundle discount", "multi-line discount"],
+    "definition": "A discount you get for having more than one type of insurance (like auto and home) with the same company. Bundling typically saves 5% to 25% on your premiums depending on the insurer.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Good Driver Discount",
+    "aliases": ["safe driver discount", "clean record discount"],
+    "definition": "A discount for drivers with no accidents, violations, or claims over a set period, usually 3 to 5 years. Can reduce premiums significantly. Some insurers call it a safe driver or claims-free discount.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Telematics",
+    "aliases": ["telematics device", "telematics program", "driving monitor"],
+    "definition": "Technology that tracks your driving behavior (speed, braking, mileage, time of day) through a plug-in device or smartphone app. Insurers use this data to offer discounts to safe drivers, typically 10% to 40% off your premium.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Usage-Based Insurance",
+    "aliases": ["UBI", "pay-per-mile", "pay-as-you-drive", "PAYD"],
+    "definition": "A type of insurance where your premium is based on how much and how well you drive, tracked through telematics. Low-mileage drivers can save significantly. Some programs charge a base rate plus a per-mile fee.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Credit Score Factor",
+    "aliases": ["credit-based pricing", "credit factor"],
+    "definition": "The practice of using your credit history to set your insurance premium. Most states allow insurers to consider credit, and studies show a correlation between credit and claim frequency. A few states (California, Hawaii, Massachusetts) ban this practice.",
+    "learn_more_url": "https://blog.quotefii.com/blog/car-insurance-costs-by-age-and-profile?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "At-Fault Accident",
+    "aliases": ["at-fault", "at fault accident", "chargeable accident"],
+    "definition": "An accident where you are determined to be primarily responsible. At-fault accidents typically stay on your record for 3 to 5 years and can increase your premiums by 40% to 60% depending on the severity and your insurer.",
+    "learn_more_url": "https://blog.quotefii.com/blog/car-insurance-costs-by-age-and-profile?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Lapse in Coverage",
+    "aliases": ["coverage gap", "insurance lapse", "gap in coverage"],
+    "definition": "Any period where you don't have active auto insurance. Even a short lapse can lead to higher premiums when you buy a new policy, because insurers see it as a risk indicator. Some states also impose fines or suspend your registration.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Renewal",
+    "aliases": ["policy renewal", "renewal period", "auto-renewal"],
+    "definition": "When your existing policy period ends and a new one begins. Your insurer will send a renewal notice with your new premium, which may be higher or lower. This is a good time to shop around and compare rates from other companies.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Actual Cash Value",
+    "aliases": ["ACV", "actual cash value coverage"],
+    "definition": "What your car is worth right now, accounting for depreciation. If your car is totaled, the insurer pays the ACV minus your deductible. It's not what you paid for the car or what it costs to replace with a new one.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  },
+  {
+    "term": "Assigned Risk Pool",
+    "aliases": ["assigned risk", "residual market", "state auto plan"],
+    "definition": "A state-mandated program that provides auto insurance to high-risk drivers who can't find coverage in the regular market. Rates in assigned risk pools are typically much higher than standard policies.",
+    "learn_more_url": "https://blog.quotefii.com/guides?utm_source=chrome_extension&utm_medium=popup&utm_content=jargon-decoder"
+  }
+]
